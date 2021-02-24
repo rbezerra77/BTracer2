@@ -1,5 +1,5 @@
 {
-  "name": "BTracer",
+  "name": "btracer2",
   "version": "0.0.0",
   "description": "",
   "repository": {
@@ -26,6 +26,8 @@
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "mocha --exit --recursive --timeout 60000"
+    "test": "mocha --exit --recursive --timeout 60000",
+    "build": "node buildup.js",
+    "start" : "node serviceup.js"
   }
 }
