@@ -344,7 +344,7 @@ const PRIVATE_KEY2 = Buffer.from('a5013897d3fd9485afe22a97f40a8d4054dcc487cfdec4
 
 function main() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
   //-------------------------------------------
   const bodyParser = require('body-parser');
   const cors = require('cors')
