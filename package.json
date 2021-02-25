@@ -1,5 +1,6 @@
 {
   "name": "btracer2",
+  "config" : { "port" : "3000" },
   "version": "0.0.0",
   "description": "",
   "repository": {
@@ -29,6 +30,6 @@
   "scripts": {
     "dev": "lite-server",
     "test": "mocha --exit --recursive --timeout 60000",
-    "start": "node index.js"
+    "start": "node ./index.js"
   }
 }
