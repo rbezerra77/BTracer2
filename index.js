@@ -385,6 +385,7 @@ function main() {
     const query = await contractDetails.methods.addTraceCod(id, trace);
 
     await web3.eth.getTransactionCount(account1, async (err, txCount) => {
+      console.log('Testing Point 0 ')
 
       let txObject = {
         nonce: web3.utils.toHex(txCount),
@@ -397,8 +398,11 @@ function main() {
       }
 
       // web3.utils.toHex(21000)
+      console.log('Testing Point 1 ')
+      
       console.log(txCount)
 
+      console.log('Testing Point 3 ')
 
       const tx = new Tx(txObject, { chain: 'ropsten' })
       tx.sign(PRIVATE_KEY1)
