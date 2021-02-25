@@ -380,11 +380,9 @@ function main() {
     let id = incomingTraceObj['id']
     let trace = incomingTraceObj['trace']
 
-    console.log(id, trace)
+    console.log(id, trace) //ok printa
 
     const query = await contractDetails.methods.addTraceCod(id, trace);
-
-    let hashret
 
     await web3.eth.getTransactionCount(account1, async (err, txCount) => {
 
@@ -393,7 +391,7 @@ function main() {
         from: account1,
         to: contractAddress,
         data: query.encodeABI(),
-        value: 0,
+        value: web3.utils.toHex(web3.utils.toWei('0', 'ether')),
         gasLimit: web3.utils.toHex(process.env.GAS_LIMIT),
         gasPrice: web3.utils.toHex(web3.utils.toWei(process.env.GAS_PRICE, 'gwei'))
       }
