@@ -1,6 +1,8 @@
 {
   "name": "btracer2",
-  "config" : { "port" : "3000" },
+  "config": {
+    "port": "3000"
+  },
   "version": "0.0.0",
   "description": "",
   "repository": {
