@@ -10,7 +10,7 @@
     "url": ""
   },
   "author": "Rodrigo Bezerra",
-  "main": "truffle-config.js",
+  "main": "index.js",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.1.1",
     "chai": "4.2.0",
