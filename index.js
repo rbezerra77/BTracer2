@@ -393,13 +393,13 @@ function main() {
         to: contractAddress,
         data: query.encodeABI(),
         value: web3.utils.toHex(web3.utils.toWei('0', 'ether')),
-        gasLimit: web3.utils.toHex(process.env.GAS_LIMIT),
-        gasPrice: web3.utils.toHex(web3.utils.toWei(process.env.GAS_PRICE, 'gwei'))
+        gasLimit: web3.utils.toHex(91000),//process.env.GAS_LIMIT
+        gasPrice: web3.utils.toHex(web3.utils.toWei('20', 'gwei')) //process.env.GAS_PRICE
       }
 
       // web3.utils.toHex(21000)
       console.log('Testing Point 1 ')
-      
+
       console.log(txCount)
 
       console.log('Testing Point 3 ')
