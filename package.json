@@ -29,7 +29,6 @@
   "scripts": {
     "dev": "lite-server",
     "test": "mocha --exit --recursive --timeout 60000",
-    "build": "node index.js",
     "start": "node index.js"
   }
 }
