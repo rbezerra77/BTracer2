@@ -345,8 +345,22 @@ const PRIVATE_KEY2 = Buffer.from('a5013897d3fd9485afe22a97f40a8d4054dcc487cfdec4
 function main() {
   const app = express();
   const PORT = 3000;
+  //-------------------------------------------
+  const bodyParser = require('body-parser');
+  const cors = require('cors')
+  
+  app.use(bodyParser.urlencoded({extended: true}));
+  app.use(bodyParser.json())
+  app.use(cors())
+//-------------------------------------------
 
   app.use(express.json());
+  
+  app.get('/', (request, response) => {
+
+      response.json({'Welcome':'Welcome to main page!  Please refer to /get-trace-cod/:id and try get some data from blockchain.'});
+
+  });
 
   app.get('/get-trace-cod/:id', async (request, response) => {
 
