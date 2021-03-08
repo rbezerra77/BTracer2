@@ -332,7 +332,7 @@ const contractABI = [
     "constant": true
   }
 ]
-const contractAddress = '0x4665c5c3b8e724aa99C49b213D576BCbC8B83F7D' // ropsten
+const contractAddress = '0x4665c5c3b8e724aa99C49b213D576BCbC8B83F7D' // ropsten netWork
 
 const contractDetails = new web3.eth.Contract(contractABI, contractAddress)
 
